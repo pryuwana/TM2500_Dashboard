@@ -1,0 +1,1668 @@
+{
+ "items": [
+  {
+   "no": "1.1.1",
+   "item": "Penawaran komersial PLN & kesepakatan skema (HoA / BA) — prasyarat relokasi",
+   "grup": "Kontrak & Governance",
+   "pic": "Bernadus Riko Santosa",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-09-15",
+   "dueRevisi": "2026-11-23",
+   "tglSelesai": null,
+   "update": "Meeting dengan PLN (Persero) hari ini 23-Okt untuk mendiskuiskan respon surat komersial PHR; menunggu hasil.",
+   "next": null
+  },
+  {
+   "no": "1.1.2",
+   "item": "Draft kontrak PJBTL/PJBTLU + klausul pemanfaatan lahan/aset PHR, witness custody meter, otorisasi mandiri",
+   "grup": "Kontrak & Governance",
+   "pic": "Andi Saputra",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-11-05",
+   "dueRevisi": "2026-11-23",
+   "tglSelesai": null,
+   "update": "Menunggu poin 111.",
+   "next": null
+  },
+  {
+   "no": "1.1.3",
+   "item": "Risk assessment skema/jenis kontrak (Corporate Risk, Regional 1, Legal, Finance, IC, Compliance)",
+   "grup": "Kontrak & Governance",
+   "pic": "Abdullah Rizki",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-24",
+   "dueRevisi": "2026-11-10",
+   "tglSelesai": null,
+   "update": "Preliminary risk assessment atas draft KTC sudah dikirim (Mas Gunawan Adi), belum akan dischedulekan pembahasannya",
+   "next": null
+  },
+  {
+   "no": "1.1.4",
+   "item": "Kepastian PLN bahwa TM2500 dapat digunakan (relokasi ke PHR)",
+   "grup": "Kontrak & Governance",
+   "pic": "Bernadus Riko Santosa",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-15",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "1.1.5",
+   "item": "Follow-up keputusan go / no-go di sisi PLN",
+   "grup": "Kontrak & Governance",
+   "pic": "Bernadus Riko Santosa",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-15",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-18",
+   "update": "Done sejak 18/09.",
+   "next": null
+  },
+  {
+   "no": "1.1.6",
+   "item": "Draft surat request ke PLN (ajakan kerja sama)",
+   "grup": "Kontrak & Governance",
+   "pic": "Bernadus Riko Santosa",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-10",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "1.1.7",
+   "item": "Meeting dengan PLN Batam & PLN Pusat",
+   "grup": "Kontrak & Governance",
+   "pic": "Praba Yuwana",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-16",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-18",
+   "update": "Done sejak 18/09.",
+   "next": null
+  },
+  {
+   "no": "1.2.1",
+   "item": "SPRINT Gugus Tugas",
+   "grup": "Kontrak & Governance",
+   "pic": "Praba Yuwana",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-09-10",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Routing in progress.",
+   "next": null
+  },
+  {
+   "no": "1.2.2",
+   "item": "Pengaturan security, akses khusus PLN & fencing pemisah PLN–PHR (Governance Principle)",
+   "grup": "Kontrak & Governance",
+   "pic": "Andika Putra / Sultan",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": "2026-11-24",
+   "tglSelesai": null,
+   "update": "Pengaturan security akan dimasukkan ke Governance Principle (GP) sesuai diskusi sebelumnya.",
+   "next": null
+  },
+  {
+   "no": "1.2.3",
+   "item": "Key Terms & Conditions aspek security di KTC",
+   "grup": "Kontrak & Governance",
+   "pic": "Abdullah Rizki",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-10-09",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": null,
+   "update": "Masih sesuai update terakhir. Perlu tambahan input engineering / good engineering practice (KTC masih mengacu PJBTL/PJBTLU lama). Fokus KTC sebagai dasar PJBTL.",
+   "next": "Melengkapi engineering refference"
+  },
+  {
+   "no": "1.2.4",
+   "item": "Jadwal terintegrasi (baseline 3 bulan, milestone, critical path)",
+   "grup": "Kontrak & Governance",
+   "pic": "Angga Surya",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-18",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-18",
+   "update": "Done sejak 18/09.",
+   "next": null
+  },
+  {
+   "no": "1.2.5",
+   "item": "Keperluan budgeting RKAP / WP&B",
+   "grup": "Kontrak & Governance",
+   "pic": "Andi Saputra",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": null,
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "1.3.1",
+   "item": "Dispersion analysis untuk PERTEK — konfirmasi requirement/relaksasi",
+   "grup": "Kontrak & Governance",
+   "pic": "Bernadus Riko Santosa",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-24",
+   "dueRevisi": "2026-10-31",
+   "tglSelesai": null,
+   "update": "Belum ada update (Mas Riko sedang meeting dengan PLN).",
+   "next": null
+  },
+  {
+   "no": "1.3.2",
+   "item": "SLO: kelengkapan dokumen & pengajuan (NIDI, LHPP, data visual, dokumen safety)",
+   "grup": "Kontrak & Governance",
+   "pic": "PLN",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-18",
+   "dueRevisi": "2027-02-10",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "1.3.3",
+   "item": "Daftar data & dokumen pendukung SLO (NIDI, LHPP, data visual, safety)",
+   "grup": "Kontrak & Governance",
+   "pic": "Louise Suranta Sembiring",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "1.3.4",
+   "item": "Persetujuan area authority/permitting sementara CDPP → Substation North",
+   "grup": "Kontrak & Governance",
+   "pic": "Safwanul Hadi",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-10-16",
+   "dueRevisi": null,
+   "tglSelesai": "2026-10-16",
+   "update": "Done sejak 16/10.",
+   "next": null
+  },
+  {
+   "no": "2.1.1",
+   "item": "Grid Integration Study (loadflow, transient, rekomendasi proteksi, RAS; dampak trafo tanpa OLTC & VR)",
+   "grup": "Engineering",
+   "pic": "Reza Bakhtiar",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-31",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": null,
+   "update": "Simulasi masih berjalan; target tetap 31-Okt. Studi internal (Mas Reza) jadi dasar; studi ITS berjalan paralel (hasil mirip).",
+   "next": null
+  },
+  {
+   "no": "2.1.2",
+   "item": "Scope elektrikal untuk MOC (titik tie-in & routing kabel dari GIS)",
+   "grup": "Engineering",
+   "pic": "Gerhan Arfin Pradana",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-30",
+   "dueRevisi": "2026-11-06",
+   "tglSelesai": null,
+   "update": "Layout, titik tie-in & routing kabel status IFR — proses review PHR.",
+   "next": null
+  },
+  {
+   "no": "2.1.3",
+   "item": "Final design switchgear/switchrack 480 V + enclosure (antisipasi banjir)",
+   "grup": "Engineering",
+   "pic": "Dimas Pungky Pradana",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-11-30",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": null,
+   "update": "Disepakati ikut konfigurasi PLN existing: incoming 3000 A + 4 feeder 800 A (RFA awal 3 feeder, +1). Estimasi fabrikasi 30–40 hari, delivery 1–2 minggu. Finalisasi desain → RO.",
+   "next": "Pembuatan RO Pembelian kabel by Mas Dimas Pungky"
+  },
+  {
+   "no": "2.1.4",
+   "item": "Visit steam station — validasi switchgear",
+   "grup": "Engineering",
+   "pic": "Praba Yuwana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-10-09",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Belum terlaksana; dijadwalkan Selasa 27-Okt bersama Mas Hikmat.",
+   "next": null
+  },
+  {
+   "no": "2.1.5",
+   "item": "Hitung tambahan roll kabel 13,8 kV (stok ±1.800 m vs kebutuhan ±2.000 m)",
+   "grup": "Engineering",
+   "pic": "Gerhan Arfin Pradana",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-30",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Stok tidak cukup; perlu tambahan ±2 roll → lanjut RO. Arahan Mas Teddy: kuantitas berdasar MTO dokumen IFR/IFA, bukan perkiraan.",
+   "next": "Pembuatan RO Pembelian kabel by Mas Dimas Pungky"
+  },
+  {
+   "no": "2.1.6",
+   "item": "Gambar arsitektur sistem kontrol & spek metering listrik dari PLN",
+   "grup": "Engineering",
+   "pic": "Erik Falah",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-30",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Sudah follow-up ke PLN, belum ada jawaban.",
+   "next": null
+  },
+  {
+   "no": "2.1.7",
+   "item": "Sizing kabel 13,8 kV untuk power GT",
+   "grup": "Engineering",
+   "pic": "Gerhan Arfin Pradana",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-10-02",
+   "dueRevisi": null,
+   "tglSelesai": "2026-10-09",
+   "update": "Done sejak 09/10.",
+   "next": null
+  },
+  {
+   "no": "2.2.1",
+   "item": "Finalisasi engineering (IFR → IFC) & EWP piping",
+   "grup": "Engineering",
+   "pic": "Gezag Akbar",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-10-31",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": "2026-10-16",
+   "update": "Done sejak 16/10. Finalisasi engineering selesai (dibantu Mas Ramdani); dokumen IFR → IFC setelah review HAZOP.",
+   "next": null
+  },
+  {
+   "no": "2.2.2",
+   "item": "Feedback layout dari PLN (2 versi: piping only & + control room/trafo 480 V)",
+   "grup": "Engineering",
+   "pic": "Bernadus Riko Santosa",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-09-15",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": null,
+   "update": "Layout sudah via Mas Riko ke PLN, belum ada feedback.",
+   "next": null
+  },
+  {
+   "no": "2.2.3",
+   "item": "Verifikasi sizing orifice meter PLN (±12–14 MMSCFD, 2 stream)",
+   "grup": "Engineering",
+   "pic": "Ardhi Tri Mahindra",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-09-25",
+   "dueRevisi": "2026-11-04",
+   "tglSelesai": null,
+   "update": "Mas Ardhi tidak hadir — follow-up offline. Indikasi masih sesuai (ukuran pipa optimal 6\").",
+   "next": null
+  },
+  {
+   "no": "2.2.4",
+   "item": "Realokasi gas sesuai load demand",
+   "grup": "Engineering",
+   "pic": "Aga Hanuraga",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-30",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": "2026-10-16",
+   "update": "Done sejak 16/10. Selesai.",
+   "next": null
+  },
+  {
+   "no": "2.2.5",
+   "item": "Ketersediaan utility water & instrument air",
+   "grup": "Engineering",
+   "pic": "Ricky Rahmadani",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-30",
+   "dueRevisi": "2026-11-20",
+   "tglSelesai": null,
+   "update": "Survei dengan tim WTP done. Supply hanya untuk kebutuhan harian (MCK); kebutuhan konstruksi PLN dari sumber lain. Tapping terdekat dari TAR Shop (sebelah DGF). Perlu data kebutuhan dari PLN.",
+   "next": null
+  },
+  {
+   "no": "2.2.6",
+   "item": "Assessment ketersediaan custody meter gas",
+   "grup": "Engineering",
+   "pic": "Wimpy",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-30",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "2.2.7",
+   "item": "Assessment fuel line DGF → DGT#7 (alternatif tarik baru)",
+   "grup": "Engineering",
+   "pic": "Nofri Sagita",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-15",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "2.2.8",
+   "item": "Study flow assurance, line sizing & piping stress analysis (IFR)",
+   "grup": "Engineering",
+   "pic": "Bernadus Riko Santosa",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-10-31",
+   "dueRevisi": null,
+   "tglSelesai": "2026-10-16",
+   "update": "Done sejak 16/10.",
+   "next": null
+  },
+  {
+   "no": "2.3.1",
+   "item": "MOC & switching procedure swap trafo TX-3/TX-5 DRB",
+   "grup": "Engineering",
+   "pic": "Gerhan Arfin Pradana",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-10-16",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": null,
+   "update": "MOC sudah direview semua reviewer; FR P2 minta kepastian panjang kabel TX-5 & TX-3 → pengukuran saat pemadaman minggu depan.",
+   "next": null
+  },
+  {
+   "no": "2.3.5",
+   "item": "SP Pengukuran kabel trafo TX-3/TX-5 DRB",
+   "grup": "Engineering",
+   "pic": "Gerhan Arfin Pradana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-10-30",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "SP pemadaman oleh PPBL; Mas Gerhan follow-up.",
+   "next": null
+  },
+  {
+   "no": "2.3.6",
+   "item": "Pengukuran kabel trafo TX-3/TX-5 DRB",
+   "grup": "Engineering",
+   "pic": "Dimas Pungky Pradana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-10-30",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Dilakukan saat pemadaman minggu depan, dibantu tim maintenance.",
+   "next": null
+  },
+  {
+   "no": "2.3.2",
+   "item": "Kompilasi MOC Work Package TM2500 & functional review",
+   "grup": "Engineering",
+   "pic": "Ricky Rahmadani",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-11-30",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": null,
+   "update": "1st approval dikembalikan (return to originator, info Mbak Hiren) — perlu follow-up. Ask for help: 1st approval MOC.",
+   "next": "Approval 1st dikembalikan, diperlukan follow-up lebih lanjut."
+  },
+  {
+   "no": "2.3.3",
+   "item": "HAZOP dengan tim PSM (undang PLN)",
+   "grup": "Engineering",
+   "pic": "Aziz Budiman",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-10-16",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": null,
+   "update": "Menunggu undangan PSM (Mas Aziz) & P&ID dari PLN; belum ada update dari Mas Riko.",
+   "next": null
+  },
+  {
+   "no": "2.3.4",
+   "item": "Fire water: survei & test hydrant DGF, keputusan hydrant tambahan",
+   "grup": "Engineering",
+   "pic": "Mohammad Fajar Arofah",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-10-09",
+   "dueRevisi": "2026-11-06",
+   "tglSelesai": null,
+   "update": "Survei pompa ditunda; menunggu hasil kajian risiko/HAZOP tim PSE — bila tidak direkomendasikan, fire water tambahan tidak diperlukan.",
+   "next": null
+  },
+  {
+   "no": "2.4.1",
+   "item": "Join site visit dengan PLN — penentuan lokasi & site preparation",
+   "grup": "Engineering",
+   "pic": "Bernadus Riko Santosa",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-11",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-18",
+   "update": "Done sejak 18/09.",
+   "next": null
+  },
+  {
+   "no": "2.4.2",
+   "item": "Kunjungan ke PLN Balai Pungut (load list, switchgear, fuel piping, arsitektur kontrol)",
+   "grup": "Engineering",
+   "pic": "Dimas Pungky Pradana",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-22",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "2.4.3",
+   "item": "Overlay gambar pondasi TM2500 ke layout PHR (ex-Sulzer & DGT#6/#7)",
+   "grup": "Engineering",
+   "pic": "Gezag Akbar",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "2.4.4",
+   "item": "Reassess alternatif lokasi instalasi 2 unit TM2500 (Opt1 / Opt2)",
+   "grup": "Engineering",
+   "pic": "Sulthan Fazhel",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-15",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "2.4.5",
+   "item": "Verifikasi fasilitas bawah tanah di area kerja (pipa di bawah concrete)",
+   "grup": "Engineering",
+   "pic": "Ricky Rahmadani",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-10-16",
+   "dueRevisi": null,
+   "tglSelesai": "2026-10-16",
+   "update": "Done sejak 16/10.",
+   "next": null
+  },
+  {
+   "no": "2.4.6",
+   "item": "Vendor uji kekuatan beton (hammer test / drill core) — N/A",
+   "grup": "Engineering",
+   "pic": "Gezag Akbar",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "3.1.1",
+   "item": "Perbaikan Trafo SST 13,8/0,48 kV 2 MVA",
+   "grup": "Material",
+   "pic": "Dimas Pungky Pradana",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-11-30",
+   "dueRevisi": "2026-11-06",
+   "tglSelesai": null,
+   "update": "Menunggu relokasi.",
+   "next": null
+  },
+  {
+   "no": "3.1.2",
+   "item": "Pengadaan kabel 13,8 kV MC-HL (Form F137) & routing cable tray / UGC",
+   "grup": "Material",
+   "pic": "Sulthan Fazhel",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-12-14",
+   "dueRevisi": "2026-12-18",
+   "tglSelesai": null,
+   "update": "F137 disiapkan tim project (Mas Wisdal / Mas Divvo / Kang Hardi); kebutuhan tambahan ±2 roll — lampirkan dasar desain IFR untuk RO.",
+   "next": "Pembuatan RO Pembelian kabel by Mas Dimas Pungky"
+  },
+  {
+   "no": "3.1.4",
+   "item": "Material cable tray",
+   "grup": "Material",
+   "pic": "Dimas Pungky Pradana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-18",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Item baru dari S-Curve Rev 23-Okt.",
+   "next": null
+  },
+  {
+   "no": "3.1.5",
+   "item": "Kabel 480 V trafo SST – power (scope PHR)",
+   "grup": "Material",
+   "pic": "Dimas Pungky Pradana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-10-07",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Item baru dari S-Curve Rev 23-Okt.",
+   "next": null
+  },
+  {
+   "no": "3.1.3",
+   "item": "Penyediaan genset",
+   "grup": "Material",
+   "pic": "NA",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": null,
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09. Diputuskan cancel.",
+   "next": null
+  },
+  {
+   "no": "3.2.1",
+   "item": "Material pipa 8\" sch 40 (10 joint) dari stok Drilling",
+   "grup": "Material",
+   "pic": "Gezag Akbar",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-09-25",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": null,
+   "update": "Reservasi 10 joint sudah dibuat (Mas Sultan) — waiting approval Asst Manager FPPSE (GL account).",
+   "next": "Approval Reservasi Pipa Asst Manager FPPS"
+  },
+  {
+   "no": "3.2.2",
+   "item": "Fitting: ball valve 6\" #300, elbow, reducer 8\"×6\", gate valve",
+   "grup": "Material",
+   "pic": "Ricky Rahmadani",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": null,
+   "update": "Ball valve HCT sudah terpakai aktivitas lain; alternatif di godown MGT (2 unit, perlu cek kondisi). Flange belum teridentifikasi — BOM sudah dibuat, cek SAP & booking minggu depan.",
+   "next": "Diperlukan izin dari faciliti owner (1 pcs)"
+  },
+  {
+   "no": "3.2.4",
+   "item": "Request ke Mas Syaiful untuk penggunaan Ball Valve.",
+   "grup": "Material",
+   "pic": null,
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-11-13",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Perlu izin Facility Owner (1 pcs).",
+   "next": null
+  },
+  {
+   "no": "3.2.3",
+   "item": "Opportunity pemanfaatan piping eksisting PLN 6\" (±600 m)",
+   "grup": "Material",
+   "pic": "Praba Yuwana",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "4.1.1",
+   "item": "Dress-up akses & area ex-Sulzer (gravel ±120 m³)",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Abdi Yustita Marbun",
+   "status": "In Progress",
+   "risk": "At Risk",
+   "dueAwal": "2026-10-26",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": null,
+   "update": "Opsi tim construction batal (material tidak ada / masuk kontrak EPC). Gravel via provisional sum kontrak SSN (Mas Dimas) — menunggu penawaran kontraktor; eksekusi tim RW (Mas Abdi Marbun).",
+   "next": "Provisional Sum menggunakan kontrak SSN."
+  },
+  {
+   "no": "4.1.2",
+   "item": "Notifikasi SAP dressing & re-surface akses jalan",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Safwanul Hadi",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "4.2.1",
+   "item": "Upgrade relay proteksi F60/T60 & VCB 13,8 kV (DRB & Duri Community)",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Dimas Pungky Pradana",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-11-30",
+   "dueRevisi": "2026-12-14",
+   "tglSelesai": null,
+   "update": "Sudah diplaningkan",
+   "next": null
+  },
+  {
+   "no": "4.2.2",
+   "item": "Persiapan & mobilisasi trafo ex-Bangko (refurbish oli/gasket, test motor pompa oli)",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Sulthan Fazhel",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-10-09",
+   "dueRevisi": "2026-10-26",
+   "tglSelesai": null,
+   "update": "Koordinasi mobilisasi dengan IM PSE North (Bang Desman / Bang Davidson / Bang Ghazali); butuh crane & lowboy;",
+   "next": null
+  },
+  {
+   "no": "4.2.3",
+   "item": "Relokasi kabel kontrol dari Pari",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Sulthan Fazhel",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-11-30",
+   "dueRevisi": "2026-11-13",
+   "tglSelesai": null,
+   "update": "Notifikasi sudah dibuat; nomor reservasi sedang diminta (Kang Erik) → dijadwalkan di 7-days plan Senin.",
+   "next": null
+  },
+  {
+   "no": "4.2.5",
+   "item": "Install cable tray",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Dimas Pungky Pradana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-23",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Item baru dari S-Curve Rev 23-Okt.",
+   "next": null
+  },
+  {
+   "no": "4.2.6",
+   "item": "Install swap trafo TX-3 & TX-5 DRB (trafo ex-Bangko)",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Sulthan Fazhel",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2027-01-17",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Item baru dari S-Curve Rev 23-Okt (14-Nov-26 s.d. 17-Jan-27; bobot terbesar 16,5%). Prasyarat: MOC 2.3.1 & material 4.2.2.",
+   "next": null
+  },
+  {
+   "no": "4.2.4",
+   "item": "Notifikasi SAP penggantian relay & pengujian 3 breaker",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "Sulthan Fazhel",
+   "status": "Done",
+   "risk": null,
+   "dueAwal": "2026-09-25",
+   "dueRevisi": null,
+   "tglSelesai": "2026-09-25",
+   "update": "Done sejak 25/09.",
+   "next": null
+  },
+  {
+   "no": "4.3.1",
+   "item": "Install fire system & fire hydrant (scope PHR)",
+   "grup": "Konstruksi (Scope PHR)",
+   "pic": "TBC",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-13",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Item baru dari S-Curve Rev 23-Okt. Tergantung keputusan fire water (2.3.4) setelah HAZOP.",
+   "next": null
+  },
+  {
+   "no": "5.1.1",
+   "item": "Finalisasi rute mobilisasi unit (Gate 2 / Gate 9)",
+   "grup": "Relokasi (Scope PLN)",
+   "pic": "Sulthan Fazhel",
+   "status": "In Progress",
+   "risk": null,
+   "dueAwal": "2026-09-15",
+   "dueRevisi": "2026-10-30",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "5.1.2",
+   "item": "Rencana kerja PLN: lifting plan, transport plan, JSA & PTW (review PHR)",
+   "grup": "Relokasi (Scope PLN)",
+   "pic": "TBC",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-10-20",
+   "dueRevisi": "2026-11-19",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "5.1.3",
+   "item": "IMB untuk Control Room dll",
+   "grup": "Relokasi (Scope PLN)",
+   "pic": null,
+   "status": "Open",
+   "risk": null,
+   "dueAwal": null,
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Reminder ke PLN: IMB/PBG bangunan control room dll. diurus PLN (BMN); masukkan ke pembahasan KTC. ",
+   "next": null
+  },
+  {
+   "no": "5.2.1",
+   "item": "Monitoring progres PLN: dismantling (Nov W3–W4), transport (Des W1), unloading & reassembly (Des W2–W3)",
+   "grup": "Relokasi (Scope PLN)",
+   "pic": "TBC",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-18",
+   "dueRevisi": "2027-01-29",
+   "tglSelesai": null,
+   "update": "PLN mulai bergerak setelah perjanjian disepakati.",
+   "next": null
+  },
+  {
+   "no": "6.1.1",
+   "item": "Setting relay final sesuai hasil GIS",
+   "grup": "Commissioning",
+   "pic": "Dimas Pungky Pradana",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-14",
+   "dueRevisi": "2026-11-30",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "6.1.2",
+   "item": "Relokasi & tera ulang custody meter gas (DIMET) + commissioning flow computer",
+   "grup": "Commissioning",
+   "pic": "Ardhi Tri Mahindra",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-09",
+   "dueRevisi": "2027-01-29",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "6.1.3",
+   "item": "Test procedure integrasi proteksi, interlock, SCADA & RAS/load shedding",
+   "grup": "Commissioning",
+   "pic": "TBC",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-11",
+   "dueRevisi": "2027-02-04",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "6.2.1",
+   "item": "PSSR & closing punch list kategori A",
+   "grup": "Commissioning",
+   "pic": "TBC",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2026-12-15",
+   "dueRevisi": "2027-02-04",
+   "tglSelesai": null,
+   "update": null,
+   "next": null
+  },
+  {
+   "no": "6.2.2",
+   "item": "Prosedur operasi bersama (dispatch, komunikasi, emergency, load shedding) & interface agreement",
+   "grup": "Commissioning",
+   "pic": "TBC",
+   "status": "Open",
+   "risk": null,
+   "dueAwal": "2027-02-09",
+   "dueRevisi": null,
+   "tglSelesai": null,
+   "update": "Item baru dari S-Curve Rev 23-Okt.",
+   "next": null
+  }
+ ],
+ "scurve": {
+  "weeks": [
+   {
+    "w": "2026-09-06",
+    "plan": 0,
+    "act": 0
+   },
+   {
+    "w": "2026-09-13",
+    "plan": 0.02141955778582929,
+    "act": 0.023630914826498425
+   },
+   {
+    "w": "2026-09-20",
+    "plan": 0.026995009496059444,
+    "act": 0.03103933753943218
+   },
+   {
+    "w": "2026-09-27",
+    "plan": 0.07093679324722742,
+    "act": 0.07061328424602771
+   },
+   {
+    "w": "2026-10-04",
+    "plan": 0.11153743477891219,
+    "act": 0.12967673705098198
+   },
+   {
+    "w": "2026-10-11",
+    "plan": 0.1546252971629491,
+    "act": 0.20758260768436815
+   },
+   {
+    "w": "2026-10-18",
+    "plan": 0.18072091981680785,
+    "act": null
+   },
+   {
+    "w": "2026-10-25",
+    "plan": 0.2205597823702185,
+    "act": null
+   },
+   {
+    "w": "2026-11-01",
+    "plan": 0.2881212532392966,
+    "act": null
+   },
+   {
+    "w": "2026-11-08",
+    "plan": 0.2913547115251076,
+    "act": null
+   },
+   {
+    "w": "2026-11-15",
+    "plan": 0.377991528454407,
+    "act": null
+   },
+   {
+    "w": "2026-11-22",
+    "plan": 0.4482490988920167,
+    "act": null
+   },
+   {
+    "w": "2026-11-29",
+    "plan": 0.48769443726472994,
+    "act": null
+   },
+   {
+    "w": "2026-12-06",
+    "plan": 0.5348068468882093,
+    "act": null
+   },
+   {
+    "w": "2026-12-13",
+    "plan": 0.586608195984805,
+    "act": null
+   },
+   {
+    "w": "2026-12-20",
+    "plan": 0.6816740563942416,
+    "act": null
+   },
+   {
+    "w": "2026-12-27",
+    "plan": 0.718794057326435,
+    "act": null
+   },
+   {
+    "w": "2027-01-03",
+    "plan": 0.7552170673618721,
+    "act": null
+   },
+   {
+    "w": "2027-01-10",
+    "plan": 0.7917351082552575,
+    "act": null
+   },
+   {
+    "w": "2027-01-17",
+    "plan": 0.8282720800010003,
+    "act": null
+   },
+   {
+    "w": "2027-01-24",
+    "plan": 0.8493089317604461,
+    "act": null
+   },
+   {
+    "w": "2027-01-31",
+    "plan": 0.8898618991521487,
+    "act": null
+   },
+   {
+    "w": "2027-02-07",
+    "plan": 0.9571430200000743,
+    "act": null
+   },
+   {
+    "w": "2027-02-14",
+    "plan": 1.0000001800000744,
+    "act": null
+   },
+   {
+    "w": "2027-02-21",
+    "plan": 1.0000001800000744,
+    "act": null
+   },
+   {
+    "w": "2027-02-28",
+    "plan": 1.0000001800000744,
+    "act": null
+   }
+  ],
+  "areas": [
+   {
+    "name": "Engineering",
+    "weight": 0.049999999999999996,
+    "plan": 0.4482654618161112,
+    "act": 0.6309148264984227
+   },
+   {
+    "name": "Material",
+    "weight": 0.3,
+    "plan": 0.26666666666666666,
+    "act": 0.33333333333333337
+   },
+   {
+    "name": "Konstruksi scope PHR",
+    "weight": 0.5499999999999999,
+    "plan": 0.09493077104014402,
+    "act": 0.1382488479262673
+   },
+   {
+    "name": "Testing & commissioning",
+    "weight": 0.10000001,
+    "plan": 0,
+    "act": 0
+   }
+  ],
+  "activities": [
+   {
+    "name": "Join site visit Duri",
+    "area": "Engineering",
+    "start": "2026-09-10",
+    "finish": "2026-09-11",
+    "weight": 0.0003154574132492114,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Plot plan/layout Drawing",
+    "area": "Engineering",
+    "start": "2026-09-15",
+    "finish": "2026-10-02",
+    "weight": 0.00220820189274448,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Site Visit Pungut",
+    "area": "Engineering",
+    "start": "2026-09-22",
+    "finish": "2026-09-22",
+    "weight": 0.0001577287066246057,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Layout pondasi TM2500",
+    "area": "Engineering",
+    "start": "2026-09-18",
+    "finish": "2026-09-25",
+    "weight": 0.0009463722397476341,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Finalisasi lokasi instalasi",
+    "area": "Engineering",
+    "start": "2026-10-02",
+    "finish": "2026-10-02",
+    "weight": 0.0001577287066246057,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Grid Integration Study",
+    "area": "Engineering",
+    "start": "2026-09-10",
+    "finish": "2026-10-30",
+    "weight": 0.00583596214511041,
+    "plan": 0.472974454931151,
+    "pct": 1
+   },
+   {
+    "name": "Kalkulasi trafo step-up eks DGT-7",
+    "area": "Engineering",
+    "start": "2026-09-28",
+    "finish": "2026-10-30",
+    "weight": 0.003943217665615142,
+    "plan": 0.2799995942402402,
+    "pct": 1
+   },
+   {
+    "name": "Desain Pipe line",
+    "area": "Engineering",
+    "start": "2026-09-10",
+    "finish": "2026-09-30",
+    "weight": 0.002365930599369085,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Kalkulasi sizing pipe line",
+    "area": "Engineering",
+    "start": "2026-09-15",
+    "finish": "2026-10-28",
+    "weight": 0.005047318611987382,
+    "plan": 0.4718761639840549,
+    "pct": 1
+   },
+   {
+    "name": "P&ID, isometric & piping stress analysis",
+    "area": "Engineering",
+    "start": "2026-10-05",
+    "finish": "2026-10-30",
+    "weight": 0.0031545741324921135,
+    "plan": 0.1750000792501038,
+    "pct": 1
+   },
+   {
+    "name": "Preparation EWP piping work",
+    "area": "Engineering",
+    "start": "2026-11-02",
+    "finish": "2026-11-13",
+    "weight": 0.0015772870662460567,
+    "plan": 0,
+    "pct": 1
+   },
+   {
+    "name": "Kalkulasi fuel Gas",
+    "area": "Engineering",
+    "start": "2026-09-10",
+    "finish": "2026-09-30",
+    "weight": 0.002365930599369085,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Desain interkoneksi elektrikal",
+    "area": "Engineering",
+    "start": "2026-10-05",
+    "finish": "2026-11-06",
+    "weight": 0.003943217665615142,
+    "plan": 0.1399997971201201,
+    "pct": 0
+   },
+   {
+    "name": "Desain SCADA/RTU & integrasi PCN",
+    "area": "Engineering",
+    "start": "2026-09-10",
+    "finish": "2026-10-30",
+    "weight": 0.00583596214511041,
+    "plan": 0.472974454931151,
+    "pct": 0
+   },
+   {
+    "name": "Desain akses jalan & rute mobilisasi",
+    "area": "Engineering",
+    "start": "2026-09-10",
+    "finish": "2026-10-09",
+    "weight": 0.003470031545741325,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "HAZID/HAZOP",
+    "area": "Engineering",
+    "start": "2026-11-02",
+    "finish": "2026-11-13",
+    "weight": 0.0015772870662460567,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "MOC Penggantian Trafo & TM2500",
+    "area": "Engineering",
+    "start": "2026-10-10",
+    "finish": "2026-11-13",
+    "weight": 0.005520504731861199,
+    "plan": 0.05714337469432116,
+    "pct": 0
+   },
+   {
+    "name": "Study Dispersion TM2500",
+    "area": "Engineering",
+    "start": "2026-10-22",
+    "finish": "2026-10-31",
+    "weight": 0.0015772870662460567,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Relay proteksi",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-10-02",
+    "weight": 0.02,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "VCB 13,8 kV x2 & pengujian 3 breaker",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-09-24",
+    "weight": 0.02,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Trafo SST 13,8/0,48 kV",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-09-10",
+    "weight": 0.02,
+    "plan": 1,
+    "pct": 1
+   },
+   {
+    "name": "Kabel 480 V trafo SST - Power",
+    "area": "Material",
+    "start": "2026-09-23",
+    "finish": "2026-10-07",
+    "weight": 0.02,
+    "plan": 1,
+    "pct": 0
+   },
+   {
+    "name": "Kabel 15kV",
+    "area": "Material",
+    "start": "2026-09-14",
+    "finish": "2026-12-18",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Material Cable Tray",
+    "area": "Material",
+    "start": "2026-09-25",
+    "finish": "2026-12-18",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Pipe Line",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-11-13",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Elbow 8\" 90",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-11-13",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Fitting",
+    "area": "Material",
+    "start": "2026-10-05",
+    "finish": "2026-11-13",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Material Pipe Support",
+    "area": "Material",
+    "start": "2026-10-05",
+    "finish": "2026-11-13",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "SWAP Trafo TX3 & TX5",
+    "area": "Material",
+    "start": "2026-10-17",
+    "finish": "2026-10-26",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 1
+   },
+   {
+    "name": "Panel switchgear 480",
+    "area": "Material",
+    "start": "2026-10-17",
+    "finish": "2026-12-18",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Panel Swichtgear 13.8",
+    "area": "Material",
+    "start": "2026-10-17",
+    "finish": "2026-10-26",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 1
+   },
+   {
+    "name": "Fire System & Fire Hydrain",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-11-20",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Service Water System",
+    "area": "Material",
+    "start": "2026-09-10",
+    "finish": "2026-11-20",
+    "weight": 0.02,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Create SAP",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-09-18",
+    "finish": "2026-09-24",
+    "weight": 0.012672811059907835,
+    "plan": 0.999999210909025,
+    "pct": 1
+   },
+   {
+    "name": "Clearing Area",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-09-22",
+    "finish": "2026-10-05",
+    "weight": 0.02534562211981567,
+    "plan": 0.999999210909025,
+    "pct": 1
+   },
+   {
+    "name": "Dressing Temporary access road",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-10-06",
+    "finish": "2026-10-30",
+    "weight": 0.04815668202764977,
+    "plan": 0.14736813252076347,
+    "pct": 0
+   },
+   {
+    "name": "Site preparation area (Relokasi Ex trafo & aksesories)",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-10-06",
+    "finish": "2026-10-26",
+    "weight": 0.03801843317972351,
+    "plan": 0.18666630894542463,
+    "pct": 1
+   },
+   {
+    "name": "Fabrikasi & konstruksi pipe line",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-11-16",
+    "finish": "2026-12-04",
+    "weight": 0.03801843317972351,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "NDT, hydrotest, drying & purging pipe line",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-12-07",
+    "finish": "2026-12-08",
+    "weight": 0.005069124423963134,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Tie-in ke line DGF",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-12-09",
+    "finish": "2026-12-10",
+    "weight": 0.005069124423963134,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Install Trafo SST",
+    "area": "Konstruksi scope PHR",
+    "start": "2027-01-25",
+    "finish": "2027-01-26",
+    "weight": 0.005069124423963134,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Penggantian relay F60/T60 & VCB 13,8 kV",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-11-13",
+    "finish": "2026-12-14",
+    "weight": 0.05322580645161291,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Instalasi kabel dari trafo SST 13,8/0,48 kV ke switchgear 13,8 kV",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-12-14",
+    "finish": "2027-01-06",
+    "weight": 0.03294930875576037,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Instalasi SCADA/RTU",
+    "area": "Konstruksi scope PHR",
+    "start": "2027-01-04",
+    "finish": "2027-01-18",
+    "weight": 0.02534562211981567,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Setting relay",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-11-25",
+    "finish": "2026-11-30",
+    "weight": 0.0076036866359447015,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Install SWAP Trafo TX3 & TX5",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-11-14",
+    "finish": "2027-01-17",
+    "weight": 0.16474654377880185,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Install Panel switchgear 480",
+    "area": "Konstruksi scope PHR",
+    "start": "2027-01-19",
+    "finish": "2027-01-23",
+    "weight": 0.012672811059907835,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Install Cable Tray",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-12-19",
+    "finish": "2026-12-23",
+    "weight": 0.012672811059907835,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Install Kabel 480 V trafo SST - Power",
+    "area": "Konstruksi scope PHR",
+    "start": "2027-01-24",
+    "finish": "2027-02-02",
+    "weight": 0.02534562211981567,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Kabel 15kV",
+    "area": "Konstruksi scope PHR",
+    "start": "2027-01-24",
+    "finish": "2027-02-02",
+    "weight": 0.02534562211981567,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Install Fire System & Fire Hydrain (PHR)",
+    "area": "Konstruksi scope PHR",
+    "start": "2026-12-09",
+    "finish": "2026-12-13",
+    "weight": 0.012672811059907835,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Conversion & verification test 50 -> 60 Hz",
+    "area": "Testing & commissioning",
+    "start": "2026-12-10",
+    "finish": "2026-12-11",
+    "weight": 0.014285709999999998,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Pre-commissioning & commissioning GE",
+    "area": "Testing & commissioning",
+    "start": "2026-12-14",
+    "finish": "2026-12-15",
+    "weight": 0.014285709999999998,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Uji integrasi proteksi, interlock, SCADA & RAS/load shedding end-to-end",
+    "area": "Testing & commissioning",
+    "start": "2026-12-14",
+    "finish": "2026-12-15",
+    "weight": 0.014285709999999998,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "PSSR (Pre-Startup Safety Review) & closing punch list kategori A",
+    "area": "Testing & commissioning",
+    "start": "2026-12-15",
+    "finish": "2026-12-15",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Gas-in, first fire & FSNL (full speed no load)",
+    "area": "Testing & commissioning",
+    "start": "2026-12-16",
+    "finish": "2026-12-16",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Manual phasing test sebelum tie-in ke sistem - akses langsung di switchgear 13,8 kV (tanpa LBS, kabel 400 A x5 run)",
+    "area": "Testing & commissioning",
+    "start": "2026-12-17",
+    "finish": "2026-12-17",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Sinkronisasi ke grid PHR (per unit)",
+    "area": "Testing & commissioning",
+    "start": "2026-12-18",
+    "finish": "2026-12-18",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Load test & reliability run + performance test (kapasitas, heat rate)",
+    "area": "Testing & commissioning",
+    "start": "2026-12-18",
+    "finish": "2026-12-18",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Pemeriksaan & penerbitan SLO (LIT PLN)",
+    "area": "Testing & commissioning",
+    "start": "2026-12-21",
+    "finish": "2026-12-21",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Contingency & punch list",
+    "area": "Testing & commissioning",
+    "start": "2026-12-21",
+    "finish": "2026-12-21",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   },
+   {
+    "name": "Start Up - unit TM2500 2x25 MW beroperasi mendukung kelistrikan PHR",
+    "area": "Testing & commissioning",
+    "start": "2026-12-22",
+    "finish": "2026-12-22",
+    "weight": 0.00714286,
+    "plan": 0,
+    "pct": 0
+   }
+  ],
+  "milestones": [
+   {
+    "id": "A1000",
+    "name": "Contract signing",
+    "date": "2026-11-24",
+    "short": "Kontrak"
+   },
+   {
+    "id": "A1430",
+    "name": "Mobilisasi unit ke Duri",
+    "date": "2026-12-21",
+    "short": "Mobilisasi"
+   },
+   {
+    "id": "A1435",
+    "name": "Konstruksi PHR selesai",
+    "date": "2027-02-05",
+    "short": "Konstruksi"
+   },
+   {
+    "id": "A1440",
+    "name": "Start-up unit",
+    "date": "2027-02-18",
+    "short": "Start-up"
+   },
+   {
+    "id": "A1460",
+    "name": "Reliability run selesai",
+    "date": "2027-04-12",
+    "short": "RR"
+   }
+  ]
+ },
+ "generatedAt": "2026-10-26",
+ "reportDate": "2026-10-23"
+}

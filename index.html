@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>TM2500 GM View</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23201e1f'/><g transform='skewX(-22) translate(10 0)'><rect x='4' y='8' width='5' height='16' fill='%23e3262d'/><rect x='11' y='8' width='5' height='16' fill='%23005da8'/><rect x='18' y='8' width='5' height='16' fill='%23bece32'/></g></svg>">
+<link rel="preload" href="fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <img class="logo" src="assets/phr-horizontal-color.png" alt="Pertamina Hulu Rokan" height="34">
+    <span class="tb-div" aria-hidden="true"></span>
+    <div class="tb-title">
+      <span class="eyebrow">Dashboard proyek</span>
+      <span class="tb-name">TM2500 GM View</span>
+    </div>
+    <div class="tb-actions" id="admin" hidden>
+      <label class="btn btn-neutral"><input type="file" id="fileSc" accept=".xlsx,.xlsm" hidden><i data-lucide="line-chart"></i><span>Muat S-Curve</span></label>
+      <label class="btn btn-neutral"><input type="file" id="fileTr" accept=".xlsx,.xlsm" hidden><i data-lucide="list-checks"></i><span>Muat tracker</span></label>
+      <button class="btn btn-primary" id="dl"><i data-lucide="download"></i><span>Unduh data</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <div class="hero-text">
+      <span class="eyebrow on-ink">Relokasi 2×25 MW · PLN Balai Pungut → DGT Duri</span>
+      <h1>Persiapan utilisasi TM2500</h1>
+      <p class="hero-meta" id="subtitle">Memuat data…</p>
+      <div class="hero-status">
+        <span class="status-badge" id="projStatus">—</span>
+        <span class="hero-note" id="heroNote"></span>
+      </div>
+      <dl class="facts">
+        <div><dt>Unit</dt><dd>2 × GE TM2500</dd></div>
+        <div><dt>Kapasitas</dt><dd>2 × 25 MW</dd></div>
+        <div><dt>Lokasi</dt><dd>Area ex-Sulzer, DGT Duri</dd></div>
+        <div><dt>Bahan bakar</dt><dd>Fuel gas dari DGF</dd></div>
+      </dl>
+      <div class="shear" aria-hidden="true"><i class="s-red"></i><i class="s-blue"></i><i class="s-lime"></i></div>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/tm2500-unit.jpg" alt="Unit pembangkit mobile GE TM2500 di lokasi instalasi" loading="eager">
+      <figcaption>Unit GE TM2500 — foto referensi</figcaption>
+    </figure>
+  </section>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="mid">
+    <article class="card">
+      <header class="card-hd">
+        <h2 class="card-title">S-Curve progres fisik</h2>
+        <span class="lg"><span><i class="ln plan"></i>Rencana</span><span><i class="ln act"></i>Aktual</span><span><i class="ln ms"></i>Milestone</span></span>
+      </header>
+      <div id="curve" class="curve"></div>
+    </article>
+    <article class="card">
+      <header class="card-hd">
+        <h2 class="card-title">Progres per area kerja</h2>
+        <span class="hint" id="areaNote"></span>
+      </header>
+      <div id="areas" class="areas"></div>
+      <div class="legend"><span><b class="sw act"></b>Aktual</span><span><b class="sw plan"></b>Rencana</span></div>
+    </article>
+    <article class="card">
+      <header class="card-hd"><h2 class="card-title">Milestone utama</h2></header>
+      <ol class="ms" id="milestones"></ol>
+    </article>
+  </section>
+
+  <section class="bot">
+    <article class="card">
+      <header class="card-hd">
+        <div class="tabs" role="tablist">
+          <button class="tab on" data-tab="act" role="tab">Aktivitas lapangan</button>
+          <button class="tab" data-tab="iss" role="tab">Isu &amp; tindak lanjut</button>
+        </div>
+        <span class="hint" id="tabNote"></span>
+      </header>
+      <div class="tblwrap"><table class="tbl" id="tbl"></table></div>
+    </article>
+    <article class="card">
+      <header class="card-hd">
+        <h2 class="card-title">Ask for Help</h2>
+        <span class="hint" id="afhCount"></span>
+      </header>
+      <ul class="afh" id="afh"></ul>
+    </article>
+  </section>
+  <footer class="ft" id="footer"></footer>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="vendor/lucide.min.js" defer></script>
+<script src="vendor/xlsx.full.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
