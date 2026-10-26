@@ -44,6 +44,8 @@ Dashboard 1 halaman untuk GM — Relokasi TM2500 2×25 MW (PLN Balai Pungut → 
 - Status proyek: **On Track** bila aktual ≥ rencana dan tidak ada isu Late; **Waspada** bila deviasi negatif s.d. −5% atau ada isu Late; **Perlu perhatian** bila deviasi < −5%.
 
 ## Keamanan data
-URL Vercel dapat dibuka siapa pun yang mengetahui link-nya (`noindex` hanya mencegah muncul di mesin pencari).
-Aktifkan **Deployment Protection** (Project Settings → Deployment Protection) atau hapus `data.json` sebelum deploy
-bila data belum boleh dibuka bebas.
+Seluruh dashboard (termasuk `data.json`) dilindungi password oleh `middleware.js` (HTTP Basic Auth, dicek di server Vercel).
+- Username & password: Vercel → Project Settings → **Environment Variables** → `DASH_USER`, `DASH_PASS`.
+- Ganti password: edit `DASH_PASS` → **Deployments → Redeploy** deployment terakhir.
+- Bila env kosong, semua akses ditolak.
+`noindex` tetap aktif agar tidak muncul di mesin pencari.
