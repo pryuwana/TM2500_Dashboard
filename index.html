@@ -10,9 +10,11 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<canvas id="dots" aria-hidden="true"></canvas>
 <header class="topbar">
   <div class="topbar-in">
     <img class="logo" src="assets/phr-horizontal-color.png" alt="Pertamina Hulu Rokan" height="34">
+    <img class="logo-pgt" src="assets/pgt-logo.png" alt="Tim PGT" height="34">
     <span class="tb-div" aria-hidden="true"></span>
     <div class="tb-title">
       <span class="eyebrow">Dashboard proyek</span>
@@ -45,9 +47,17 @@
       <div class="shear" aria-hidden="true"><i class="s-red"></i><i class="s-blue"></i><i class="s-lime"></i></div>
     </div>
     <figure class="hero-photo">
-      <img src="assets/tm2500-unit.jpg" alt="Unit pembangkit mobile GE TM2500 di lokasi instalasi" loading="eager">
-      <figcaption>Unit GE TM2500 — foto referensi</figcaption>
+      <img src="assets/tm2500-unit.jpg" alt="Unit GE TM2500 di PLN Balai Pungut" loading="eager">
+      <figcaption>Unit TM2500 aktual · PLN Balai Pungut</figcaption>
     </figure>
+  </section>
+
+  <section class="card hl" id="hl" hidden>
+    <header class="card-hd">
+      <h2 class="card-title"><i data-lucide="siren"></i>Highlight kritikal</h2>
+      <span class="hint" id="hlCount"></span>
+    </header>
+    <ul class="hl-list" id="hlList"></ul>
   </section>
 
   <section class="kpis" id="kpis"></section>
@@ -100,5 +110,6 @@
 <script src="vendor/lucide.min.js" defer></script>
 <script src="vendor/xlsx.full.min.js" defer></script>
 <script src="app.js" defer></script>
+<script src="bg.js" defer></script>
 </body>
 </html>

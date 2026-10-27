@@ -58,7 +58,8 @@
       const nx = String(r.next || '').trim();
       // catatan administratif (bukan kondisi lapangan) tidak ditampilkan
       const up = String(r.update || '').trim().replace(/^(Done|Closed|N\/A) sejak [\d/]+\.?\s*/i, '').replace(/Item baru dari S-?Curve[^.]*\.?/i, '').trim();
-      const afh = status !== 'Done' && (/^AFH\s*:/i.test(nx) || /ask for help/i.test(nx + ' ' + up));
+      // Ask for Help: Next Step diawali "AFH:", menyebut "ask for help", atau meminta approval / persetujuan / izin
+      const afh = status !== 'Done' && (/^AFH\s*:/i.test(nx) || /ask for help/i.test(nx + ' ' + up) || /\b(approval|persetujuan|izin)\b/i.test(nx));
       const pic = String(r.pic || '').trim();
       return { ...r, pic: !pic || /^(tbc|na|-)$/i.test(pic) ? 'Belum ditentukan' : pic, due, status, flag, sisa: due == null || status === 'Done' ? null : due - rd, next: nx, update: up, afh };
     });
@@ -66,7 +67,11 @@
       .sort((a, b) => (a.flag === b.flag ? 0 : a.flag === 'Late' ? -1 : 1) || ((a.sisa ?? 9e9) - (b.sisa ?? 9e9)));
     const late = issues.filter((i) => i.flag === 'Late').length;
     const status = prog.dev < -0.05 ? 'danger' : (prog.dev < 0 || late > 0) ? 'warning' : 'success';
-    return { raw, rd, weeks, prog, ms, areas, field, items, issues, late, status };
+    // highlight kritikal: teks dari data.json, status & PIC diambil langsung dari tracker
+    const byNo = new Map(items.map((i) => [String(i.no), i]));
+    const highlights = (raw.highlights || []).map((h) => ({ ...h, ref: (h.refs || []).map((n) => byNo.get(String(n))).filter(Boolean) }))
+      .filter((h) => !h.ref.length || h.ref.some((r) => r.status !== 'Done'));
+    return { raw, rd, weeks, prog, ms, areas, field, items, issues, late, status, highlights };
   }
 
   // ---------- render ----------
@@ -97,6 +102,7 @@
       stat('Isu terbuka', 'alert-triangle', `<span class="${M.late ? 'c-danger' : 'c-warning'}">${M.issues.length}</span>`,
         `${M.late} Late · ${M.issues.length - M.late} At Risk`);
 
+    renderHighlights();
     renderCurve();
 
     $('areaNote').textContent = `s.d. minggu ${fmt(p.week, false)}`;
@@ -122,6 +128,23 @@
 
     $('footer').textContent = `Pertamina Hulu Rokan · Relokasi TM2500 2×25 MW · data per ${fmt(rd)}`;
     icons();
+  }
+
+  function renderHighlights() {
+    const H = DATA.highlights, box = $('hl');
+    box.hidden = !H.length;
+    if (!H.length) return;
+    $('hlCount').textContent = `${H.length} item`;
+    $('hlList').innerHTML = H.map((h) => {
+      const crit = /kritikal/i.test(h.level || '');
+      const r = h.ref[0];
+      const pill = r && (r.flag === 'Late' || r.flag === 'At Risk') ? `<span class="pill ${r.flag === 'Late' ? 'late' : 'risk'}">${r.flag}</span>` : '';
+      return `<li class="${crit ? 'crit' : 'warn'}">
+        <span class="hl-ic"><i data-lucide="${esc(h.icon || 'alert-octagon')}"></i></span>
+        <span class="hl-tx"><span class="hl-t">${esc(h.title)}</span><span class="hl-s">${esc(h.target || '')}</span></span>
+        ${pill}
+      </li>`;
+    }).join('');
   }
 
   function renderTable() {

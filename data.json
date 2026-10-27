@@ -1664,5 +1664,36 @@
   ]
  },
  "generatedAt": "2026-10-26",
- "reportDate": "2026-10-23"
+ "reportDate": "2026-10-23",
+ "highlights": [
+  {
+   "level": "Kritikal",
+   "icon": "cable",
+   "title": "Pengadaan kabel 15 kV — RO harus terbit sekarang",
+   "target": "Material diterima Desember 2026",
+   "refs": [
+    "3.1.2",
+    "2.1.5"
+   ]
+  },
+  {
+   "level": "Kritikal",
+   "icon": "server",
+   "title": "Pengadaan switchgear 480 V — PO paling lambat awal November",
+   "target": "Unit diterima Desember 2026",
+   "refs": [
+    "2.1.3"
+   ]
+  },
+  {
+   "level": "Perlu keputusan",
+   "icon": "shield-alert",
+   "title": "Kajian risiko kontrak — pembahasan belum dijadwalkan",
+   "target": "Prasyarat contract signing 24 Nov 2026",
+   "refs": [
+    "1.1.3",
+    "1.1.2"
+   ]
+  }
+ ]
 }

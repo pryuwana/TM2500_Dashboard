@@ -20,7 +20,9 @@ Dashboard 1 halaman untuk GM — Relokasi TM2500 2×25 MW (PLN Balai Pungut → 
 | `index.html`, `styles.css`, `app.js` | Dashboard (HTML/JS murni, tanpa build step) |
 | `data.json` | Data per 23 Okt 2026 (S-Curve Rev 23 Okt + tracker) |
 | `assets/phr-horizontal-color.png` | Logo resmi PHR (PHR Design System) |
-| `assets/tm2500-unit.jpg` | Foto unit TM2500 (foto referensi) — ganti dengan foto lapangan, nama file sama |
+| `assets/tm2500-unit.jpg` | Foto aktual unit TM2500 di PLN Balai Pungut (ganti dengan nama file sama) |
+| `assets/pgt-logo.png` | Logo tim PGT |
+| `bg.js` | Animasi background dot matrix (statis bila *reduce motion* aktif) |
 | `fonts/plus-jakarta-sans-latin.woff2` | Font PHR Design System |
 | `vendor/xlsx.full.min.js`, `vendor/lucide.min.js` | Pembaca Excel (SheetJS 0.18.5) & ikon Lucide 0.454.0 |
 | `vercel.json` | Header `noindex` & `no-store` untuk data.json |
@@ -39,7 +41,12 @@ Dashboard 1 halaman untuk GM — Relokasi TM2500 2×25 MW (PLN Balai Pungut → 
    File Excel hanya diproses di browser, tidak di-upload ke server.
 
 ## Catatan untuk admin
-- Item tracker tampil sebagai **isu** bila lewat target atau diberi Risiko Manual; **Ask for Help** bila kolom Next Step diawali `AFH:`.
+- Item tracker tampil sebagai **isu** bila lewat target atau diberi Risiko Manual.
+- **Ask for Help** bila kolom Next Step diawali `AFH:`, menyebut "ask for help", atau meminta *approval / persetujuan / izin*.
+- **Highlight kritikal** diatur di `data.json` bagian `"highlights"`: `level` (Kritikal / Perlu keputusan), `title`, `target` (1 baris), `refs` = nomor item tracker.
+  Tampil sebagai list ringkas (judul + target + status At Risk/Late).
+  Status di list highlight otomatis mengikuti tracker; highlight hilang sendiri bila semua item refs sudah Done.
+  Bagian ini tetap terbawa saat admin klik **Unduh data**.
 - Catatan administratif di kolom update (mis. "Item baru dari S-Curve…") tidak ditampilkan.
 - Status proyek: **On Track** bila aktual ≥ rencana dan tidak ada isu Late; **Waspada** bila deviasi negatif s.d. −5% atau ada isu Late; **Perlu perhatian** bila deviasi < −5%.
 
