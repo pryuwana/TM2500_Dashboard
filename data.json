@@ -635,7 +635,7 @@
    "dueRevisi": "2026-11-13",
    "tglSelesai": null,
    "update": "Reservasi 10 joint sudah dibuat (Mas Sultan) — waiting approval Asst Manager FPPSE (GL account).",
-   "next": "Approval Reservasi Pipa Asst Manager FPPS"
+   "next": "Approval Reservasi Pipa 8 inch – PIC: Sulthan Fazhel"
   },
   {
    "no": "3.2.2",
@@ -648,7 +648,7 @@
    "dueRevisi": "2026-11-13",
    "tglSelesai": null,
    "update": "Ball valve HCT sudah terpakai aktivitas lain; alternatif di godown MGT (2 unit, perlu cek kondisi). Flange belum teridentifikasi — BOM sudah dibuat, cek SAP & booking minggu depan.",
-   "next": "Diperlukan izin dari faciliti owner (1 pcs)"
+   "next": "Gate Valve 6 inch diperlukan izin penggunaan Facility Owner MPP"
   },
   {
    "no": "3.2.4",
@@ -1669,7 +1669,7 @@
   {
    "level": "Kritikal",
    "icon": "cable",
-   "title": "Pengadaan kabel 15 kV — RO harus terbit sekarang",
+   "title": "Pengadaan kabel 15 kV – RO perlu segera dibuat",
    "target": "Material diterima Desember 2026",
    "refs": [
     "3.1.2",
@@ -1679,16 +1679,25 @@
   {
    "level": "Kritikal",
    "icon": "server",
-   "title": "Pengadaan switchgear 480 V — PO paling lambat awal November",
+   "title": "Pengadaan switchgear 480 V – RO perlu segera dibuat",
    "target": "Unit diterima Desember 2026",
    "refs": [
     "2.1.3"
    ]
   },
   {
+   "level": "Kritikal",
+   "icon": "plug-zap",
+   "title": "Kabel 480 V trafo ke switchgear – harus segera dipastikan ketersediaannya",
+   "target": "Dibutuhkan untuk koneksi trafo SST ke switchgear",
+   "refs": [
+    "3.1.5"
+   ]
+  },
+  {
    "level": "Perlu keputusan",
    "icon": "shield-alert",
-   "title": "Kajian risiko kontrak — pembahasan belum dijadwalkan",
+   "title": "Kajian risiko kontrak – harus segera dilakukan formal meeting",
    "target": "Prasyarat contract signing 24 Nov 2026",
    "refs": [
     "1.1.3",

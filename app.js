@@ -38,16 +38,6 @@
     const prog = { week: last.w, act: last.act, plan: last.plan, dev: last.act - last.plan };
     const ms = sc.milestones.map((m) => ({ ...m, d: toDay(m.date) })).sort((a, b) => a.d - b.d);
     const areas = sc.areas;
-    const acts = sc.activities.map((a) => ({ ...a, s: toDay(a.start), f: toDay(a.finish) }));
-    const look = rd + 14;
-    const field = acts.filter((a) => a.pct < 0.999 && a.s != null && a.f != null && a.s <= look && (a.f >= rd || a.s <= rd))
-      .map((a) => {
-        const state = a.f < rd ? 'Late' : a.s > rd ? 'Mulai ' + fmt(a.s, false) : (a.plan - a.pct >= 0.25 ? 'Behind schedule' : 'In Progress');
-        const rank = state === 'Late' ? 0 : state === 'Behind schedule' ? 1 : state === 'In Progress' ? 2 : 3;
-        return { ...a, state, rank };
-      })
-      .sort((a, b) => a.rank - b.rank || a.f - b.f);
-
     const items = raw.items.map((r) => {
       const due = toDay(r.dueRevisi) ?? toDay(r.dueAwal);
       const status = (r.status || 'Open').trim();
@@ -71,7 +61,7 @@
     const byNo = new Map(items.map((i) => [String(i.no), i]));
     const highlights = (raw.highlights || []).map((h) => ({ ...h, ref: (h.refs || []).map((n) => byNo.get(String(n))).filter(Boolean) }))
       .filter((h) => !h.ref.length || h.ref.some((r) => r.status !== 'Done'));
-    return { raw, rd, weeks, prog, ms, areas, field, items, issues, late, status, highlights };
+    return { raw, rd, weeks, prog, ms, areas, items, issues, late, status, highlights };
   }
 
   // ---------- render ----------
@@ -122,8 +112,12 @@
 
     const afh = M.items.filter((i) => i.afh);
     $('afhCount').textContent = afh.length ? `${afh.length} item` : '';
-    $('afh').innerHTML = afh.length ? afh.map((i) =>
-      `<li><span class="n"><i data-lucide="hand-helping"></i></span><span class="t">${esc(i.next.replace(/^AFH\s*:\s*/i, '') || i.item)}</span><span class="m">${esc(i.item)} · ${esc(i.pic)}</span></li>`).join('')
+    $('afh').innerHTML = afh.length ? afh.map((i) => {
+        // PIC khusus Ask for Help boleh ditulis di akhir Next Step: "… – PIC: Nama"
+        const m = i.next.match(/\s*[–—-]\s*PIC\s*:\s*(.+)$/i);
+        const txt = (m ? i.next.slice(0, m.index) : i.next).replace(/^AFH\s*:\s*/i, '').trim() || i.item;
+        return `<li><span class="n"><i data-lucide="hand-helping"></i></span><span class="t">${esc(txt)}</span><span class="m">${esc(i.item)} · PIC ${esc(m ? m[1].trim() : i.pic)}</span></li>`;
+      }).join('')
       : '<li><span class="empty">Tidak ada Ask for Help saat ini.</span></li>';
 
     $('footer').textContent = `Pertamina Hulu Rokan · Relokasi TM2500 2×25 MW · data per ${fmt(rd)}`;
@@ -147,23 +141,39 @@
     }).join('');
   }
 
+  // tabel kegiatan: seluruhnya dari tracker (termasuk yang sudah Done)
+  const ORD = { 'In Progress': 0, 'Open': 1, 'Done': 2 };
+  const stCls = (s) => s === 'Done' ? 'ok' : s === 'In Progress' ? 'run' : 'plan';
+  function itemRow(i) {
+    const fin = toDay(i.tglSelesai);
+    const tgt = i.status === 'Done' ? (fin != null ? `Selesai ${ddmm(fin)}` : 'Selesai')
+      : i.sisa == null ? '—' : i.sisa < 0 ? `<span class="neg">Lewat ${-i.sisa} hari</span>` : ddmm(i.due);
+    const fl = i.flag === 'Late' || i.flag === 'At Risk' ? `<span class="pill ${i.flag === 'Late' ? 'late' : 'risk'}">${i.flag}</span>` : '';
+    return `<tr class="${i.status === 'Done' ? 'is-done' : ''}"><td class="it">${esc(i.item)}</td><td class="ar">${esc(i.grup || '')}</td><td class="pic">${esc(i.pic)}</td>
+      <td class="r tg">${tgt}</td><td class="st"><span class="pill ${stCls(i.status)}">${esc(i.status)}</span>${fl}</td><td class="ns">${esc(i.update || '—')}</td></tr>`;
+  }
+  const HEAD = '<thead><tr><th>Kegiatan</th><th>Area</th><th>PIC</th><th class="r">Target</th><th>Status</th><th>Update lapangan</th></tr></thead><tbody>';
+  const sortItems = (arr) => [...arr].sort((a, b) => (ORD[a.status] ?? 1) - (ORD[b.status] ?? 1)
+    || (a.status === 'Done' ? (toDay(b.tglSelesai) ?? 0) - (toDay(a.tglSelesai) ?? 0) : (a.due ?? 9e9) - (b.due ?? 9e9)));
+  let flt = 'Semua';
+
   function renderTable() {
-    const M = DATA;
+    const M = DATA, fbox = $('tblFilter');
     if (tab === 'act') {
-      $('tabNote').textContent = `${fmt(M.rd, false)} – ${fmt(M.rd + 14)} · ${M.field.length} aktivitas`;
-      const cls = (s) => s === 'Late' ? 'late' : s === 'Behind schedule' ? 'risk' : s === 'In Progress' ? 'run' : 'plan';
-      $('tbl').innerHTML = `<thead><tr><th>Aktivitas</th><th>Area</th><th class="r">Mulai</th><th class="r">Selesai</th><th class="r">Progres</th><th>Kondisi</th></tr></thead><tbody>` +
-        (M.field.length ? M.field.map((a) => `<tr><td class="it">${esc(a.name)}</td><td class="ar">${esc(a.area)}</td><td class="r">${ddmm(a.s)}</td><td class="r">${ddmm(a.f)}</td>
-          <td class="r"><span class="mini"><i style="width:${(a.pct * 100).toFixed(0)}%"></i></span>${pct(a.pct, 0)}</td><td><span class="pill ${cls(a.state)}">${esc(a.state)}</span></td></tr>`).join('')
-          : '<tr><td colspan="6" class="ns">Tidak ada aktivitas terjadwal dalam 2 minggu ke depan.</td></tr>') + '</tbody>';
+      const cnt = (s) => M.items.filter((i) => i.status === s).length;
+      const opts = [['Semua', M.items.length], ['In Progress', cnt('In Progress')], ['Open', cnt('Open')], ['Done', cnt('Done')]];
+      fbox.hidden = false;
+      fbox.innerHTML = opts.map(([k, n]) => `<button class="chip${flt === k ? ' on' : ''}" data-f="${k}">${k}<b>${n}</b></button>`).join('');
+      fbox.querySelectorAll('.chip').forEach((c) => c.onclick = () => { flt = c.dataset.f; renderTable(); });
+      const rows = sortItems(flt === 'Semua' ? M.items : M.items.filter((i) => i.status === flt));
+      $('tabNote').textContent = `${M.items.length} kegiatan · ${cnt('Done')} Done`;
+      $('tbl').innerHTML = HEAD + (rows.length ? rows.map(itemRow).join('') : '<tr><td colspan="6" class="ns">Tidak ada kegiatan.</td></tr>') + '</tbody>';
     } else {
-      $('tabNote').textContent = `${M.issues.length} isu · ${M.late} Late`;
-      $('tbl').innerHTML = `<thead><tr><th>Kegiatan</th><th>PIC</th><th class="r">Target</th><th>Kondisi</th><th>Update lapangan</th></tr></thead><tbody>` +
-        (M.issues.length ? M.issues.map((i) => {
-          const tgt = i.sisa == null ? '—' : i.sisa < 0 ? `<span class="neg">Lewat ${-i.sisa} hari</span>` : `${ddmm(i.due)}`;
-          return `<tr><td class="it">${esc(i.item)}</td><td class="pic">${esc(i.pic)}</td><td class="r">${tgt}</td>
-            <td><span class="pill ${i.flag === 'Late' ? 'late' : 'risk'}">${i.flag}</span></td><td class="ns">${esc(i.update || '—')}</td></tr>`;
-        }).join('') : '<tr><td colspan="5" class="ns">Tidak ada isu terbuka.</td></tr>') + '</tbody>';
+      fbox.hidden = true;
+      const done = sortItems(M.items.filter((i) => i.status === 'Done'));
+      $('tabNote').textContent = `${M.issues.length} isu terbuka · ${M.late} Late · ${done.length} Done`;
+      $('tbl').innerHTML = HEAD + (M.issues.length ? M.issues.map(itemRow).join('') : '<tr><td colspan="6" class="ns">Tidak ada isu terbuka.</td></tr>')
+        + (done.length ? `<tr class="sep"><td colspan="6">Sudah selesai (${done.length})</td></tr>` + done.map(itemRow).join('') : '') + '</tbody>';
     }
   }
 

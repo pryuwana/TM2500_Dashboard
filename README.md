@@ -43,6 +43,8 @@ Dashboard 1 halaman untuk GM — Relokasi TM2500 2×25 MW (PLN Balai Pungut → 
 ## Catatan untuk admin
 - Item tracker tampil sebagai **isu** bila lewat target atau diberi Risiko Manual.
 - **Ask for Help** bila kolom Next Step diawali `AFH:`, menyebut "ask for help", atau meminta *approval / persetujuan / izin*.
+  PIC khusus Ask for Help dapat ditulis di akhir Next Step: `… – PIC: Nama`.
+- Tab **Aktivitas lapangan** dan **Isu & tindak lanjut** memakai item tracker saja (termasuk yang Done); S-Curve dipakai untuk progres fisik, kurva, area kerja dan milestone.
 - **Highlight kritikal** diatur di `data.json` bagian `"highlights"`: `level` (Kritikal / Perlu keputusan), `title`, `target` (1 baris), `refs` = nomor item tracker.
   Tampil sebagai list ringkas (judul + target + status At Risk/Late).
   Status di list highlight otomatis mengikuti tracker; highlight hilang sendiri bila semua item refs sudah Done.
