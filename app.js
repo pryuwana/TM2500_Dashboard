@@ -48,8 +48,8 @@
       const nx = String(r.next || '').trim();
       // catatan administratif (bukan kondisi lapangan) tidak ditampilkan
       const up = String(r.update || '').trim().replace(/^(Done|Closed|N\/A) sejak [\d/]+\.?\s*/i, '').replace(/Item baru dari S-?Curve[^.]*\.?/i, '').trim();
-      // Ask for Help: Next Step diawali "AFH:", menyebut "ask for help", atau meminta approval / persetujuan / izin
-      const afh = status !== 'Done' && (/^AFH\s*:/i.test(nx) || /ask for help/i.test(nx + ' ' + up) || /\b(approval|persetujuan|izin)\b/i.test(nx));
+      // Ask for Help: kolom "Next Step / Ask for Help" terisi pada item yang belum Done, atau update menyebut "ask for help"
+      const afh = status !== 'Done' && (nx !== '' || /ask for help/i.test(up));
       const pic = String(r.pic || '').trim();
       return { ...r, pic: !pic || /^(tbc|na|-)$/i.test(pic) ? 'Belum ditentukan' : pic, due, status, flag, sisa: due == null || status === 'Done' ? null : due - rd, next: nx, update: up, afh };
     });
@@ -69,7 +69,7 @@
 
   function render() {
     const M = DATA, rd = M.rd, p = M.prog;
-    $('subtitle').textContent = `Laporan per ${fmt(rd)} · progres fisik s.d. minggu ${fmt(p.week, false)}–${fmt(p.week + 6)}`;
+    $('subtitle').textContent = `Laporan per ${fmt(rd)} · progres fisik s.d. minggu ${fmt(p.week)}`;
     const st = $('projStatus');
     st.className = 'status-badge ' + M.status;
     st.textContent = { danger: 'Perlu perhatian', warning: 'Waspada', success: 'On Track' }[M.status];
@@ -131,7 +131,9 @@
     $('hlCount').textContent = `${H.length} item`;
     $('hlList').innerHTML = H.map((h) => {
       const crit = /kritikal/i.test(h.level || '');
-      const r = h.ref[0];
+      // status terburuk di antara item terkait (Late > At Risk > lainnya)
+      const rank = (x) => x.flag === 'Late' ? 0 : x.flag === 'At Risk' ? 1 : 2;
+      const r = [...h.ref].sort((x, y) => rank(x) - rank(y))[0];
       const pill = r && (r.flag === 'Late' || r.flag === 'At Risk') ? `<span class="pill ${r.flag === 'Late' ? 'late' : 'risk'}">${r.flag}</span>` : '';
       return `<li class="${crit ? 'crit' : 'warn'}">
         <span class="hl-ic"><i data-lucide="${esc(h.icon || 'alert-octagon')}"></i></span>

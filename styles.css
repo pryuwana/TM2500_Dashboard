@@ -229,7 +229,8 @@ tr:hover td{background:var(--neutral-25)}
 #dots{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;display:block}
 
 /* ---------- logo tim PGT ---------- */
-.logo-pgt{height:34px;width:auto;display:block;margin-left:-2px}
+.logo-pgt{height:34px;width:auto;display:block;margin-left:auto}
+.tb-actions:not([hidden])+.logo-pgt{margin-left:0}
 
 /* ---------- highlight kritikal ---------- */
 .card-title svg{width:18px;height:18px;vertical-align:-3px;margin-right:6px;color:var(--danger-fg)}
@@ -267,3 +268,10 @@ tr:hover td{background:var(--neutral-25)}
 #tbl td.ar{white-space:normal}
 #tbl td.st{white-space:normal}#tbl td.st .pill{margin:0 4px 3px 0}#tbl td.st .pill+.pill{margin-left:0}
 #tbl td.tg{white-space:normal}
+
+/* mobile: Ask for Help tampil tepat di bawah Highlight kritikal */
+@media (max-width:760px){
+  .page>*{order:10}
+  .hero{order:1} #hl{order:2} .bot{display:contents} #afhCard{order:3}
+  #kpis{order:4} .mid{order:5} #tblCard{order:6} .ft{order:7}
+}

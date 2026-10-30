@@ -14,7 +14,6 @@
 <header class="topbar">
   <div class="topbar-in">
     <img class="logo" src="assets/phr-horizontal-color.png" alt="Pertamina Hulu Rokan" height="34">
-    <img class="logo-pgt" src="assets/pgt-logo.png" alt="Tim PGT" height="34">
     <span class="tb-div" aria-hidden="true"></span>
     <div class="tb-title">
       <span class="eyebrow">Dashboard proyek</span>
@@ -25,6 +24,7 @@
       <label class="btn btn-neutral"><input type="file" id="fileTr" accept=".xlsx,.xlsm" hidden><i data-lucide="list-checks"></i><span>Muat tracker</span></label>
       <button class="btn btn-primary" id="dl"><i data-lucide="download"></i><span>Unduh data</span></button>
     </div>
+    <img class="logo-pgt" src="assets/pgt-logo.png" alt="Tim PGT" height="34">
   </div>
 </header>
 
@@ -85,7 +85,7 @@
   </section>
 
   <section class="bot">
-    <article class="card">
+    <article class="card" id="tblCard">
       <header class="card-hd">
         <div class="tabs" role="tablist">
           <button class="tab on" data-tab="act" role="tab">Aktivitas lapangan</button>
@@ -96,7 +96,7 @@
       <div class="chips" id="tblFilter" hidden></div>
       <div class="tblwrap"><table class="tbl" id="tbl"></table></div>
     </article>
-    <article class="card">
+    <article class="card" id="afhCard">
       <header class="card-hd">
         <h2 class="card-title">Ask for Help</h2>
         <span class="hint" id="afhCount"></span>
