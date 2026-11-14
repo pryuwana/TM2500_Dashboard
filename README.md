@@ -19,7 +19,7 @@ Dashboard 1 halaman untuk GM — Relokasi TM2500 2×25 MW (PLN Balai Pungut → 
 |---|---|
 | `index.html` | Halaman utama: report 1 slide update proyek (self-contained; font & gambar tertanam) |
 | `report.pdf` | Versi PDF report 1 slide (tombol "Unduh PDF") |
-| `dashboard.html`, `styles.css`, `app.js` | Dashboard detail di `/dashboard` (HTML/JS murni, tanpa build step) |
+| `dashboard.html`, `styles.css`, `app.js` | Dashboard detail — akses tersembunyi via `/dashboard` (tidak ada link dari halaman utama) |
 | `data.json` | Data per 23 Okt 2026 (S-Curve Rev 23 Okt + tracker) |
 | `assets/phr-horizontal-color.png` | Logo resmi PHR (PHR Design System) |
 | `assets/tm2500-unit.jpg` | Foto aktual unit TM2500 di PLN Balai Pungut (ganti dengan nama file sama) |
